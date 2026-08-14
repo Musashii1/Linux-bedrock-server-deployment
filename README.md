@@ -27,10 +27,11 @@ mkdir ~/minecraft && cd ~/minecraft
 
 ### 2. Gestión de Persistencia de Servicio
 Uso de multiplexadores de terminal (screen) para poder desacoplar el proceso de la sesión activa de SSH/Shell y permitir ejecución continua en segundo plano:
-# Creación de sesión dedicada
+
+### Creación de sesión dedicada
 screen -S minecraft
 
-# Ejecución de la aplicación con bibliotecas compartidas vinculadas
+### Ejecución de la aplicación con bibliotecas compartidas vinculadas
 LD_LIBRARY_PATH=. ./bedrock_server
 
 
